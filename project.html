@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <!-- =====================================================================
+                          GAME START SCREEN
+====================================================================== -->
+    <!-- by default -- visible -->
+    <div class="main-container" id="main-container-screen">
+      <h2 class="game-intro">
+        Answer 10 questions correctly to win $1,000,000
+      </h2>
+      <br />
+      <h3 class="millionaire-intro">
+        But be careful - One wrong answer and you could lose it all
+      </h3>
+      <button class="Start-Game-Btn" id="Start-Btn-Id">Start Game</button>
+    </div>
+
+
+    <!-- =====================================================================
+                          GAME SCREEN
+====================================================================== -->
+    <!-- by default display:none -->
+    <div id="game-screen">
+      <!-- section questions -->
+      <div id="quiz-section">
+        <h2 id="question"></h2>
+        <div id="answers">
+          <ul id="answersList"></ul>
+        </div>
+      </div>
+      
+      <div id="rewards">
+        <h2>Money Ladder</h2>
+       <ul id="rewards-list">
+        <li class="amount">$1000,000</li>
+        <li class="amount">$900,000</li>
+        <li class="amount">$800,000</li>
+        <li class="amount">$700,000</li>
+        <li class="amount">$600,000</li>
+        <li class="amount">$500,000</li>
+        <li class="amount">$400,000</li>
+        <li class="amount">$300,000</li>
+        <li class="amount">$200,000</li>
+        <li class="amount">$100,000</li>
+      </ul>
+      </div>
+    </div>
+
+<!-- =====================================================================
+                          PLAY AGAIN SCREEN (Wrong Answer)
+====================================================================== -->
+<div id="wrong-answer-screen">
+  <h2 id="price-money"></h2>
+  <h2>Nice Try! Do you want to play again?</h2>
+  <button id="try-again">Try Again?</button>
+</div>
+
+<!-- =====================================================================
+                          END SCREEN
+====================================================================== -->
+
+<div id="end-screen">
+
+  <h2 id="end-screen-message"></h2>
+  <button id="Play-Again-Btn">Play Again?</button>
+
+</div>
+  </body>
+  <!-- <script src="questions.js"></script> -->
+  <script type="module" src="./project.js"></script>
+</html>
