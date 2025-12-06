@@ -37,7 +37,7 @@ export const questions = [
     {
         question: "What is the largest mammal on Earth?",
         choices: ["Elephant", "Blue Whale" , "Giraffe", "Hippo"],
-        correct: "Elephant" 
+        correct: "Blue Whale" 
     },
     /*============================================================== 
                                Question 6 
